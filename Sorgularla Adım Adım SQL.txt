@@ -1,0 +1,230 @@
+-- ınsert into tabloadi ( alan1,alan2,alan3) values(değer1,değer2,değer3) 
+    == tabloya kayıt ekleme komutudur.
+
+-- delete from tabloadi	 where alan1 = değer1 
+    ==  tablodan alan1'deki değer1 kaydını siler.  
+
+--  truncate table tabloadi 
+    ==  tablodaki kayıtları temizler
+
+--  update tabloadi Set alan1=değer1 where arananalan=aranandeğer
+    ==  tablodaki kayıtta güncelleme yapabiliriz
+
+--  select Count (*) from tabloadi
+    ==  tablodaki kayıt sayisini ekrana yazar
+
+--  select Sum(alan1) from tabloadi 
+    ==  alan1'deki değerleri toplar ve ekrana yazdırır
+
+--  select Avg(alan1) from tabloadi 
+   ==   alan1'deki ortlamayı hesaplar ve ekrana yazar
+
+--  select Max(alan1) from tabloadi  
+   == alan1'deki en yüksek değeri ekrana yazar
+
+--  select Min(alan1) from tabloadi  
+   == alan1'deki en düşük değeri ekrana yazar
+
+--  select alan1,count(*) from tabloadi Group by alan1
+    == alan1'deki değerlere göre kayıtları gruplandırır.
+
+--  select alan1,count(*) from tabloadi group by alan1 Having alan1=değer1
+    == değer1'i sağlayanları ekrana yazdırır. 
+
+--  select *from tabloadi where alan1 like '%a' 
+    == alan1 değerinin son harfi a olanları ekrana yazdırır. 
+
+--  select *from tabloadi where alan1 like 'a% '
+    == alan1 değerinin ilk   harfi  a olanları ekrana yazdırır
+
+--  select *from tabloadi where alan1 like '%a% '
+    == alan1 değerinin içinde  harfi  a olanları ekrana yazdırır
+
+--  select * from tabloadi Order by alan1 asc
+    ==  kayıtları alan1 değerine göre küçükten büyüğe sıralar. 
+
+--  select * from tabloadi Order by alan1 desc
+    ==  kayıtları alan1 değerine göre büyükten küçüğe sıralar. 
+
+-- select distinc alan1 from tabloadi 
+   == alan1 değerlerini tekrarlanmadan ekrana yazdırır.
+
+-- select Top 1 * from tabloadi order by alan1 desc
+   == alan 1 değeri en yüksek olan kaydın bilgilerini ekrana yazdırır. 
+
+-- select top 50 percent * from tabloadi order by alan1 desc
+   ==  alan1  değerine göre sırlayıp kayıtların en yüksek %50 sini ekrana yazdırır.
+
+-- select * from tabloadi where alan1 in (değer1,değer2,değer3)
+   == alan1 için 3 değerisağlayan kayıtları ekrana yazdırır.
+
+-- select * from tabloadi where alan1 between değer1 and değer2
+   == alan1 değeri , eğer1 ve değer2 arasında olan kayıarı ekrana yazdırır. 
+
+   ---- ilişkili tabloların faydaları -------
+    a- veri karmaşasını önler
+    b- veri tekrarını önler
+    c- bellek performansı sağlar 
+
+ --  select * from tablo1 inner join tablo2  on tablo1.alan1= tablo2.alan1 
+     == alan1 isimli değerleri her iki tablodada bulunan kayıtları ekrana yazdırır.
+
+--  select * from tablo1 eft outer join tablo2  on tablo1.alan1= tablo2.alan1 
+     == alan1 isimli değerleri tablo1 tablosunda bulunan kayıtlara ait tüm bilgileri ekrana yazdırır.
+     not: talo1de olup tablo'de olmayan değeler ekrana yazılır. bosluklara null ataması yapılır
+
+--  select * from tablo1 Full join tablo2  on tablo1.alan1= tablo2.alan1 
+     == her iki tablodaki alan1 değerleri olan kayıtların tüm bilgilerini ekrana yazdırır. 
+
+-- select a+b as 'toplam '
+   ==  a ve b değerlerini toplayıp toplam başlığı altında ekrana yazdırır.( tablo şeklinde)
+   Not : toplama (+), çıkarma(-),çarpma(*),bölme(/) 
+
+--  select ABS (a)
+    == a değerini pozitif şekilde ekrana yazdırır.
+
+--  select POWER(A,B)
+    == a üssü b alır . ve ekrana yazdırır
+
+--  select sqrt(a)
+    == kök a değerini ekrana yazdırır
+
+--  select FLOOR(4.45)
+    == ekrana taban (4) değerini yazdırır
+
+-- select CEİLİNG(4.45)
+   == ekrana tavan(5) değerini yazar
+
+-- select UPPER (değer1)
+   == değer1'i tamamen büyük harflerden oluşacak şekilde ekrana yazar. 
+
+-- select LOWER (değer1)
+   == değer1'i tamamen küçük harflerden oluşacak şekilde ekrana yazar. 
+
+--  select SUBSTRING(alan1,x,y) from tabloadi 
+     == alan1 değlerinin x harfinden başlamak üzere y tane harfini yazdırır.
+    NOT: şifre luşturada kullanılır
+
+--  select LEFT(alan1,x) from tabloadi 
+    == alan1 değerlerini soldan başlayarak x adet harfini ekrana yazdırır.
+
+--  select RIGHT(alan1,x) from tabloadi 
+    == alan1 değerlerini sağdan başlayarak x adet harfini ekrana yazdırır.
+
+--  select LEN(değer1)
+    == alan1 değeri harf uzunluğunu ekrana yazdırır.
+
+--   select CHARINDEX(a,"değer1")
+     == a harfinin yerini bulur. 
+
+    ------------------------------------------------------------
+
+                       ---- PROCEDURE -----
+
+  ! metot oluşturup . daha sonra tek kelime ile çağırıp kullanmaya yarar. 
+
+  create procedure pro_isim
+  as 
+  ....komutlar
+  ...komutlar
+ 
+   ile oluşturduktan sonra . lazım olduğunda
+
+   execute pro_isim
+      ==ile çağırpıp içindeki komutların çalışmasını sağlayabiliriz.
+   drop procedure pro_isim 
+      == ile prosedürü silebiliriz
+    alter procedure pro_isim .......
+      == ile prosedürü güncelleyebiliriz
+
+
+
+   --------------------------------------------------------------
+--  select getdate()
+    == güncel tarihi ekrana yazdırır
+
+--  select datename(month,getdate())
+     == güncel tarihin ay kısmını ekrana yazdırır. 
+
+--  select datediff (month,değer1,değer2)
+    == iki tarih arasındaki farkı ay formatında ekrana yazar
+
+--  select dateadd(year,x,değer1)
+    == değer1'in yıl değerine x yıl yükseltir
+
+  ------------------------------------------------------------
+
+ --  select *from tabloadi where alan1=(select alan2 from tabloadi where alan3=aranandeğer)
+     == şeklinde iç içe iki sorguyu çalıştırabiliriz
+
+   ------------------------------------------
+  TRIGGER (TETİKLEYİCİLER) :: bir işlem yapıldıktan sonra veya yapılırken otomatik çalışması için çalışacak komut kümesidir. 
+
+-- create trigger tri_name on tabloadi 
+   after insert
+   as  print "merhaba"
+      == ekleme işlemi yapıldıktan sonra ekrana merhaba yazar. 
+      --------------------------------------------
+    WİEW (görünüm) = uzun sorguları tek kelime ile çağırabilmeye yarar
+
+-- create wiew w_name
+   as
+   select *from tabloadi 
+      == tablo'daki kayıtlara sadece w_name isimli wiewi'i çagırarak ulaşabiliriz
+      (Select * from w_name ile çağırıyoruz.)
+   ---------------------------------
+     T-SQL 
+
+--  declare @sayi 
+    == ile sanal değişken oluşturabiliyoruz.
+
+--  print 'merhaba'
+    == ekrana yazdırma yapabiliriz.
+
+--  declare @tabloadi table (......)
+    == kullanarak tablo tipi değişken ile sanal tablo oluşturabiriz. 
+
+--  if ( aranan_sart)
+      begin 
+       ...sağlarsa calısacak kodlar
+       end
+    else
+      begin
+       ... sağlamazsa çaışacak kodlar
+       end
+
+    == kullanarak if şartı oluşturabiliyoruz.
+
+
+--  case alan1
+    when durum1 then çalışacak_kod
+    when durum2 then çalışacak_kod2
+    when durum3 then çalışacak_kod3
+
+    == kullnarak dallanmanın çok olduğu yerlerde if yerine kullanılması daha mantıklıdır.
+
+-- waitfor delay 'ss:dd:ss'
+   == kullanarakodun belli bir süre bekledikten sonra çalışmasını sağlayabiliriz. büyük veritabanlarında çalışırken kullanılır.
+
+  ------------------------------------------------------------------------  
+    -- Transaction--
+  __ genellikle bankalar arası para transferi esnasında kulllanılır. karşıdan alınacak cevaba göre işlemi sürdürür.
+
+--  rollback : yaplan tüm işlemleri geri alır
+--  commit   : yapılan işlemleri kayıt eder 
+
+--------------------------------------------------------------------------
+Fonsiyonlar
+
+-- create function func_name (@değişken datatype)
+    return datatype (çıkması istenen veri türünü yazdırıyoruz)
+    as
+    begin
+    ...... çalışack kodlar ....
+    return değer1
+    end
+    == bu şekilde parametreyegöre çıkış üreten fonksiyonlar yazabiliriz
+-------------------------------------------------------------------------
+
+
+  

@@ -1,0 +1,57 @@
+Linkedin'de etkiliprofil oluşturma
+ 
+-- Temel İletişim Modeli
+    __ Kaynak-> kodlama -> Mesaj -> kodaçımı -> Alıcı
+                                Geri Bildirim <-
+  
+   - ikna edici iletişim yaklaşımı :  en öenmli reklam modeli AIDA reklam modelidir. 
+    Attention (dikkat ve fark etme ) -> İnterest(İlgi duyma ve inceleme) -> Desire (Arzulamak ve İstemek) -> Action ( harekete geçmmek)
+    sağa gittikçe piramitte üste çıkılıyor.
+
+--  Profil ve Arka Plan fotoğrafı  : 
+    = profosyonel olmaK zorunda değil 
+    = yüksek çözünürlük ve kalitewli olmalı
+    = Yüzünüz kadrajın odağı olmalı 
+    = Formal bir ifade ve gülümseme olmalı 
+    = yakın zamanda çekilmiş olmalıdır.
+    = arka plan fotoğrafı iş dünyasını temsil eden bir fotoğraf olmalıdır. 
+
+--  Başlık ve hakkında alanı 
+    
+    -- Başlık : 
+       = ne iş yaparsınız ?
+       = Proflilinizdeki ilk okunan bölüm 
+       = Anahtar kelimeler önemli 
+       = Şu anda ne yapıyorsun 
+       = Bay / Bayan hitap seçeneği 
+
+    -- Hakkında : 
+       =  Kattığınız değer ne ?
+       =  Kariyer yaşamınızın kısa özeti 
+       =  Anahtar kelimeler öenmli 
+       =  2-3 paragraf 
+
+-- Eğitim
+   = Üniversitesi ismi- Üniversite sayfası
+   = Sosyal deneyimler
+   = Akademik başarılar
+   = Medya ekleyin 
+
+
+-- Çalışma deneyimi 
+   = Firma ismi - Şirket sayfası 
+   = Sektör 
+   = Görev-Pozisyon-Departman-İş tanımı 
+   = Medya ekleyin
+   = Şu anki pozisyona doğrudan etkisi olan deneyimleri belirtin
+
+-- Yetenek ve onaylar : 
+   = Dürüst olun
+   = Bağlantılarınızın yeteneklerini onaylayın
+   = Kolayca ispatlanabilir yetenekler giriniz
+
+-- Referanslar 
+   = Dürüst olun 
+   = Çalışma hayatınıza dokunmuş kişileri seçiniz
+
+

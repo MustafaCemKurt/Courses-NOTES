@@ -1,0 +1,111 @@
+--   LOG : sistermdeki olayların detayları(saat, kullanııcı adı,eylem ) ile birlikte otomatik olarak kaydedilmesidir. 
+          == sistemde oluşabilecek hata ve değişikliklerin kontrol edilmesini sağlar.
+          == güvenlik ihlali oluşması durumunda loglara başvurulur.
+         Event log : Windows sistemlerde sistem üzerinden yapılşan log işlemidir 
+         Syslog    : Linux atabanlı sistemlerde tutulan log kayıtlarıdır.  
+
+
+--   PROXY( Vekil Sunucu ): internet erişimi sırasıonda kullanılan bir ara sunucudur. 
+     Kullanım amaçları : 
+     - Gizlilik ve güvenlik
+     - Yüksek ağ performansı
+     - kurumsal izleme
+     - kısıtlama ve engellemeleri atlama
+
+--  SİBER TEHDİT : bilişim sistemlerine yönelik potansiyel tehditlerdir. 
+      - gelişmiş siber tehditler
+      - botnet
+      - oltalama mailller
+      - adware
+
+--  PORT : giriş , soket ve bağlantı noktası anlamına gelmektedir. 
+    sanal port : ağ veya internet üzerinde yazılım vasıtasıyla yönlendirilen mantıksal bağlantı noktalarıdır. 
+
+--  IP adresi : ağ üzerinden  cihazlar arası bilgi gönderilmesine olanak sağlayan tanımlayıcılardır. 
+     - konum bilgisi  içerir.  - cihazların iletişim için erişilebilir olmasına olanak sağlar 
+     
+--  Sandbox   : korumalı alan anlamına gelmektedir. 
+   == sistemi  etkilemeden dosya çalışmasına ve yürütmesini sağlayan test ortamıdır
+    == zararlı yazılım analizinde dosyaların zararlı olup olmadığı karar verilmesinde kullanır. 
+-- Sanallaştırma  : fiziksel makinede eş zamanlı olarak çalışabilecek sanal makineler oluşturulasbilecek bir teklonojidir.
+                == donanım kaynaklarını verimli şekilde kullanmak için terrcih edilir .
+
+
+--  	DPI(deep packet inspection){derinlemesine paket incelemesi} 
+           == veri paketlerinin derinllemesine incelenmesi sürecidir. data/payload incelenir. genellikle güvenlik duvarına entegre çalışır. 
+
+
+--    Firewall :  güvenlik duvarı , gelen ve giden ağ trafiğini izleyen ve tanımlanmış bir dizi güvenlik kuralına göre 
+       trafiğe izin veren veya engellenmesine karar veren bir ağ güvenlik cihazıdır. 
+        - 25 yılı aşkın süredir ağ güvenliğinde ilk savunma hattıdır. 
+
+      Dağıtımına göre Güvenlik dduvarları  
+        = Ağ güvenlik duvarı : ağ ile internet arasındaki güvenlik süreçlerinden sorumludur. 
+        = Host tabanlı güvenlik duvarı : sanal veya fiziksel bir pc sisrtemine yüklenir.yüklü oldugu sistemin trafiğinden sorumludur
+        = Web uygulaması güvenlik duvarı : web sunucular özelinde çalışır . HTTP ve HTTPS trafiğini izler. Web zaafiyetlerine karşı sunucuları korur. 
+        = Bulut güvenlik duvarı : standart firewall'lardan çok farklı değildir. farkı buluta konumlandırılmış olmasıdır. 
+     
+      Yapılarına göre güvenlik duvarları : 
+        = Donanımsal Güvenlik duvarları : sunucu ile ağ arasındaki router'a  entegre edilerek konumlandırılır. IPS özelliği  olanlar tercih edilir. anlık tespit ve tepki kabiliyeti sunar
+        - hızlıdır - güvenlik olarak avantajlıdır. - daha az karışıktır. ( yalıtılmış donanım birimidir)
+        = Yazılımsal Güvenlik duvarları : ekstra bir donanım maliyeti yoktur. kullanımı basittir. kural tanımlamaları basittir. var olan sisteme  kurulur. 
+
+--     Firewall Türleri 
+
+    = Proxy Firewall : ağdan erişebilecek uygulamaları kısıtlayabillir . korunan ağın dış sistemlerle doğrdudan iletişim kurmasını engeller. güvenlik düzeyi hayli yüksektir
+    = UTM   Firewall :  içerik , spam , web filtreleme özellikleri vardır. NAT , Remote ve VPN gibi özellikler sunmaktadır . tek konsol üzerinden yönetmeye olanak sağlar.
+      - DPI özellikleri sayesinde  internete gelen giden istekleri önceden detayını inceleme ve atakları önceden engelleme kapasitesine sahiptir. 
+    = Statefull inspeciton Firewall :  ağ katmanında çalışır. hem veri headerlarını hem tarifiğin içini inceler. inceleme sonunda kural ve politikalarla karşılaştırarak 
+      trafiğe ya izin verilir , ya da engellenir. NGFW'lerin temel bileşenidir. 
+    = NGFW :gelişmiş güvenlik öze4llikleri sağlayan yeni nesilk bir güvenlik duvarıdır . yeni ve gelişen siber tehditlkere karşı kurulmuştur. DPI en önemli özelliğidir. 
+       - Uygulama ko9ntrolü , DPI , saldırı tespit ve tepki ve gelişmiş tehdit koruması gibi özellikler içerir. 
+    = Threat-Focused Firewall : NGFW özelliklerinin tamamına sahiptir. ek olarak - tehdit algılama - tehdit izleme - hızlı yanıt verme -hızlı aksiyon almöa özelliklerinede sahiptir. 
+    = Virtual Firewall :  bulut güvenlik duvarı olarakta tanımlanır. bulut sitemleri güvenliği için sanal bir makine üzerinde koşan vew varlıklarını koruyan bir güvenlik duvarıdır.
+     fiziksel güvenlik duvarı ile benzer özelliklere sahiptir. 
+
+----------------------------------------------------------
+ -- WEB Application Firewall(WAF)  : gelen ve giden paketleri izleyen , filtreleyen, engelleyen güvenlik aracıdır.
+    = WEB uygulamalarına yönelik atakların tespiti ve engellenmesinde kullanılır . 
+    = WEB sunucuları ve istemciler arasına konumlandırılır.
+    = HTTP ve HTTPS trafiğini izler. 
+    = Uygulama katmanında ( Layer 7'de) çalışır. 
+
+     EK BİLGİ :
+       - Veri sızıntılarının %30'u web üzerinden gerçekleşiyor
+       - WEB ataklarının %93'ü finansal kazanç amacıyla gerçekleşiyor.
+       - Sızma testi yapılan sayfaların %32sinde en az 1 tane kritik zaaf bulunuyor
+       - Veri sızıntılarının %62'si sistemlerin zaafiyetleri nedeniyle  oluyor
+       - WEB atakların %32'si SQL injection atakları olarak gerçekleşiyor
+
+
+ --   WEB atakları : 
+        - SQL injection : Veritabanında yetkisiz şekilde okuma , yazma yapabilme zaafiyetinin sömürülmesidir. 
+        - XSS           : WEB sayfası içeriğine istemci tarafı komut dosyası biçiminde kötü amaçlı kod enjeekte edilmesi ile oluşur.
+        - DoS-DDoS      : Hizmet dışı bnırakma saldırıları olarak nitelendirilebiir. hedef siteye çok fazla istek göndererek cevap veremez hale getirilmesi saldırısıdır. 
+           istekler tek kaynakltan gelirse DoS , Birden çok kaynaktan gelirse DDoS olarak adlandırılır .
+        - XXE İnjection : 
+        - Brute Force   : 
+        - Command İnjeciton :  
+        - SSRF: 
+       
+--  WAF Tespit Mekanizması: 
+    - By-Default Policies : WAF  üreticisi tarafından varsayılan olarak gelen politikalardır. üretici tarafından koyulan kurallardır.
+    - Custom Policies     : WAF ürününe kendi eklediğimiz kuralları temsil eder. 
+    - Repuration Services : Spam ya da zararlı olarak nitelendirilmiş , daha önce ataklarda kullanılmış İp adreslerini tutan veritabanlarında sorgu yapılması sürecidir. 
+
+--  WAF Türleri 
+      - Ağ tabanlı Firewall    :   genellikle donanım tabanlıdır. LAN içerisine lokal olarak konumlandırılır. Web sitesine giden bve gelen trafik donanım cihazı ile izlenir. 
+        = Hafıza ve bakım maliyetleri nedeniyle oldukça maliyetlidir. 
+      - Host Tabanlı Firewall  :  Sanal bir makineye yüklenir. maliyeti düşüktür. blulut ortamında kullanıma uygundur. izleme işlemesi uzuzn sürer. web sunucuda gecikmeler olabilir 
+      - Bulut Tabanlı Firewall : en çok tercih edilen sistemdir. ucuz ve kolayca dağıtılabilen bir çözümdür. kullanıcılar güvenlik için aylık ve yıllık ödemer yapar. 
+        = müşterinin ek bir maliyet veya operasyon olmaksızın tehditler ejkarşı olarak süğreklşi güncellenir. 
+
+-- WAF Faydaları  
+   = potansiyel zayıflıkları tanımlayıp , önlem almayı sağlar 
+   = güçlü default kural kümelerine sahiptir.
+   = 0-day ataklarına karşı koruma sağlar .
+   = Oturum ele geçirme saldırılarına karşı koruma sağlar
+   = Gerçek zamanlı kayıt ve raporlama sağlar . 
+   -----------------------------------------------------------
+
+-- 
