@@ -1,0 +1,21 @@
+ İşletim sistemlerine giriş 
+
+ --  İşletim sistemi nedir ? 
+    -- kullanıcı ile donanım arasında iletişim sağlayan programdır . arayüz görevi görür.
+
+ --  amaçları : donanım kaynaklarının kullanım oranı ve verimliliğini yükseltmek ( utilization )
+     -- Bilgisayar sisteminin kullanılabilirliğini arttırmak (Availability)
+
+ --  bilgisayar sistemi mimarisi 
+    -> Donanım(hardware) -> İşletim sistemi (Operating System ) -> Uygulama(Application) -> Son Kullanıcı (End User) şeklindedir . 
+
+ --  İşletim sistemleri kullanım alanları 
+    - ana bilgisayar (mainframe)
+    - sunucu  (server )
+    - çok işlemcili  (multiprocessor )
+    - kişisel bilgisayar(personal computer)
+    - el bilgisayarı ( handheld)
+    - gömülü(embedded)
+    - sensör-düğüm(sensor-node )
+    - gerçek zamanlı ( real -time )
+    -akıllı card (smart card )
