@@ -10,12 +10,75 @@
     -> Donanım(hardware) -> İşletim sistemi (Operating System ) -> Uygulama(Application) -> Son Kullanıcı (End User) şeklindedir . 
 
  --  İşletim sistemleri kullanım alanları 
-    - ana bilgisayar (mainframe)
-    - sunucu  (server )
-    - çok işlemcili  (multiprocessor )
-    - kişisel bilgisayar(personal computer)
-    - el bilgisayarı ( handheld)
-    - gömülü(embedded)
-    - sensör-düğüm(sensor-node )
-    - gerçek zamanlı ( real -time )
-    -akıllı card (smart card )
+    - ana bilgisayar (mainframe) : çok büyük verileri hızlı şeklide işlemek için kullanılır. binlerce kullanıcı tarafından eş zamanlı olarak kullanılabilir. 
+    - sunucu  (server )  : birçok kullanıcı ve sisteme hizmet eder . 
+    örnek olarak Windows Server ,RedHat Linux verilebilir. 
+    - çok işlemcili  (multiprocessor ) : birden fazla görevi eş zamanlı olarak yürütebilmeyi sağlar . günümüz kişisel bilgisayar işletim ssitemleri çok işlemcili işletim sistemlerindendir . örnek olarak ; Windows 7,10,Server,Linux , MacOS
+    - kişisel bilgisayar(personal computer) : çoklu görev ve çoklu programlamaıyı desteklerler . Windows 10 vsr
+    - el bilgisayarı ( handheld) : telefonlardır . örnek olarak : android,ios 
+    - gömülü(embedded) : ROM . asansör , beyaz eşya, tv ve savunma sanayi projelerinde kullanılır. örnek olarak  ;SymbOS,Emebedded Linux, Android, OpenCL verilebilir. 
+    - sensör-düğüm(sensor-node ) : verileri arabellek olmadan anında işlemeyi amaçlar . alarm bazlı çalışır. etkiye tepki şeklinde çalışır 
+    - gerçek zamanlı ( real -time )  : zamanın kritik önem arz ettiği durumlarda kullanılır. hızlı yanıt ve az kaynak tüketimi nedeniyle sıkça tercih edilir . 
+    -akıllı card (smart card ) : küçük boyutludur ve belli görevler için tanımlanmıştır. kredi kartı çipleri örnek olarak verilebilir. 
+
+
+ -- İşletim sistemi bileşenleri : 
+
+  -> Dosya yönetim sistemi -> Kabuk ( shell ) -> Çekirdek (Kernel) şeklindedir. 
+
+ -- İşletim sistemi Fonksiyonları
+
+  -- Kullanıcı arayüzü sağlama  :
+              -Komut satırı arayüzü (CLI)
+              - Grafiksel kullanıcı arayüzü(GUI)
+  -- Donanım erişimi yöntemi    :
+              - Uygulamalar ve donanım arasındaki etkileşimi yönetir.
+              - Ağ,görüntü,ses,disk yöentimi 
+  -- Dosya ve Klasör yönetimi   : 
+              - okuma-yazma kontrolünün yapılması 
+              - dosyaların saklanması, okuması ve korunması 
+  -- Uygulama ve Bellek Yönetimi:
+              - Belleğin işlemler ve uygulamalar arası paylaştırılması 
+              - 
+
+
+ -- İşletim sisteminin tarihçesi 
+    - bilgisayar tarihinin ilk işletim sistemi Alan Turing'in panel ışıkları ve düğmeleri kontrol edebilecek bir yazılım geliştirilmesi sonucu elde edilmiştir.
+
+    -- Grafik tabanlı ilk işletim sistemi 1970-1973 yıllarında Xerox Parc'tır. 
+
+    -- 1979 yılında Steve jobs ve jef raskin apple ile 1987 yılında tarihin en renkli işletim sistemini ortaya cıkardı . 
+
+    -- 1995 yılında dünyada işletim sistemine Bill gates win95 ile piyasaya çıktı . 
+
+    -- Günümüz işletim sistemleri  
+       -- Windows 7 sonrası inanılmaz görünen dokunmatik ekran , 3 boyutlu oyun gibi  yenilikler ortay cıktı . günümüzde windows 10 ve 11 en popüler işletim sistemleridir. 
+
+       -- Linux , UNIX yapısıyla artık mini bilgisayarlara değil,Süper bilgisayarlara destek veriyor. Dünyanın 10 süper bilgisayarı Linux işletim sistemi ile çalışıyor. 
+
+       -- Ülkemizde TUBİTAK bünyesinde Linux camiası ile geliştirilen Pardus işletim sistemi bilinen ilk işletim sistemimizdir. 
+
+       -- Apple firmasıo tarafından geliştirilen Macintosh iletim sistemi , grafik kullanıcı arayüzü olan tüm işletim sistemlerine destek sağlar. 
+
+       -- İşletim sistemi temel kavramlar : 
+
+        -- Kernel : İşletim sisteminin en temel yapısıdır. 
+              - donanım ve yazılım arası bağlantıyı ssağlar. 
+              - Bilgisayar sisteminin tüm işlemlerini kontrol eder. 
+            - Kernel Görevleri : 
+                 - İşlem yönetimi (Process managament )
+                 - Dosya yönetimi (File managamenent)
+                 - Aygıt Yönetimi (Device management)
+                 - Giriş-çıkış yönetimi(In-Output managament)
+                 - Hafıza yönetimi (memory managament  )
+
+
+       -- Kabuk(Shell ) : 
+           -- Çekirdek ve kullanıcı arasındaki katmandır. 
+           -- Komutları algılar ve çekirdek bölümüne gönderir.
+           -- bazı sistemlerde çekirdekle iç içe olur. 
+                Shell Çeşitleri : 
+                 -- CLI: komut istemcisi 
+                 -- GUI: grafik arayüzü 
+
+                 
