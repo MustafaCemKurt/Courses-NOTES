@@ -80,5 +80,32 @@
                 Shell Çeşitleri : 
                  -- CLI: komut istemcisi 
                  -- GUI: grafik arayüzü 
+       -- Dosya yönetim sistemi : 
+            -- İşletim sisteminin dosyaları yönetmesini sağlar. 
+            -- Verilerin toplandıgı bölümdür.
+            -- Çoğu zaman hıyerarşik dosya düzenini kullanır.
+                 Dosya Yönetim sistemi çeşitleri : 
+                   -- FAT (File Allocation Table): dosyalar kümelere ayrılır. dosya yerleşim tablosu ile iletişim sağlanır.
+                   -- NTFS(New Tech File System ): Windows tarafından desteklenir. daha güvenli erişim sunar. boş alanı verimli kullanımlmasını sağlar. yetkilendirme imkanı sunar. 
 
-                 
+
+ -- Türlerine göre işletim sistemleri : 
+    -- Sıngle User-Single Tasking İşletim sistemleri : 
+        -- User->Computer->CPU->Result şeklinde ilerler. 
+        -- Eş zamanlı olarak yalnızca bir işlem işletilir.
+        -- Kısıtlı kaynak oldugunda kullanılır. 
+    -- Sıngle User-Multi  Taskıng İşletim sistemleri : 
+        -- Aynı anda birden fazla task'ı işleme sunmayı sağlar. 
+        -- Wındows  ve Linux UNIX örnek verilebilir. 
+    -- Gerçek zamanlı ( real-time ) İşletim sistemleri : 
+        -- Zamanın kritik önem arz ettiği durumlarda kullanılır. 
+        -- Kararlılık ve doğruluklarıyla ön plana cıkarlar. 
+        -- Hızlı yanıt ve az kaynak imkanlarıyla ön plana çıkarlar. ,
+        -- Örnek olarak ; LynxOS,Linux Embedded,VxWWork örnnek verilebilir.
+    -- Gömülü İşletim sistemleri : 
+        -- Donanım ve yazılımın sıkı bir işbirliği ile çalıştığı sistemlerdir.
+        -- Sistem özel bir amaç için tasarlanmıştır. 
+        -- Asansörler-otomobil çipleri vsr örnek verilebilir. 
+
+
+
